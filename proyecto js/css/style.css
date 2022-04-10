@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #219F94;
+}
+.main-card{
+    max-width: 360px;
+    background-color: #C1DEAE;
+    padding: 26px;
+    border-radius: 4px;
+    margin: 8% auto 0;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+}
+.main-card h3{
+    color: #3E8E7E;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 3px;
+    text-align: center;
+}
+.main-card h3 span{
+    color: #194350;
+}
+.main-card p{
+    font-weight: 600;
+}
+.main-card hr{
+    margin-top: 4px;
+}
+.main-card input[type="range"]{
+    width: 100%;
+
+}
+
+.input-copy .password{
+
+    padding: 13px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-bottom: 9px;
+    margin-top: 25px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+.input-copy .password a img{
+    width: 22px;
+}
+
+.select-option {
+    margin-bottom: 5px;
+}
+.select-option label{
+    font-size: 17px;
+}
+
+.main-card .generate{
+    border: none;
+    padding: 10px 23px;
+    color: #194350;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    margin-top: 14px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.main-card .generate:hover {
+    background-color: #C8C2BC;
+    color: #214252;
+}
+
