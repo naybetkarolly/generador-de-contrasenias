@@ -1,4 +1,4 @@
-//seclector donde se va a setear la contraseña 
+//selector donde se va a setear la contraseña 
 let textPw = document.querySelector("#pw-text");
 //selector para mostrar el tamaño de la contraseña
 let displaySize =  document.querySelector(".display-pw-size span");
@@ -63,7 +63,7 @@ function generatePw(e){
    
 }
 
-function completePw(){
+function completePw(){ //funcion que completa los caracteres 
     while (passwordAll.length < parseInt(displaySize.textContent)) {
         const numberR = getRandom();
         if (upper.checked && numberR === 0) {
