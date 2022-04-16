@@ -85,6 +85,7 @@ function completePw() {
 
 	textPw.innerHTML = passwordAll;
 }
+
 //funciones para obtener un caracter de cada uno de los strings
 
 //return aleatorio de los caracteres a utilizar
@@ -118,6 +119,7 @@ function getNumberCase() {
 function getSymbolCase() {
 	return symbols[getRandomNumber(symbols.length)];
 }
+
 //funcionalidad del input de tipo rango y cantidad de caracteres
 function showVal(value) {
 	displaySize.textContent = value;
