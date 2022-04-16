@@ -42,7 +42,10 @@ function copyPw(e){
         document.execCommand("copy");
         textArea.remove();
     }
+
+
 }
+
 // logica del generate. 
 function generatePw(e){
     passwordAll = '';// resetear el password all para que no se concatene en consola
@@ -56,7 +59,7 @@ function generatePw(e){
         passwordAll += getSymbolCase();
     }
     if (upper.checked || lower.checked || number.checked || symbol.checked) {
-        completePw();// garantiza que por lo menos salga un caracter de cada uno 
+        completePw();// garantiza que salga un caracter de cada uno 
     }
 
 
@@ -79,8 +82,9 @@ function completePw(){ //funcion que completa los caracteres
 
     textPw.innerHTML = passwordAll;
 }
-//funciones para obtener un caracter de cada uno de los strings
 
+
+//funciones para obtener un caracter de cada uno de los strings
 
 //return aleatorio de los caracteres a utilizar 
 function getRandomNumber(max){
