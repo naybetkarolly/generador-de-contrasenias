@@ -36,13 +36,12 @@ function copyPw(e) {
 	e.preventDefault();
 	const password = textPw.textContent;
 	if (password) {
-		navigator.clipboard.writeText(password);
-		//const textArea = document.createElement("textarea");
-		//textArea.value = password;
-		//document.body.appendChild(textArea);
-		//textArea.select();
-		//document.execCommand("copy");
-		//textArea.remove();
+		const textArea = document.createElement("textarea");
+		textArea.value = password;
+		document.body.appendChild(textArea);
+		textArea.select();
+		document.execCommand("copy");
+		textArea.remove();
 	}
 }
 
