@@ -67,10 +67,10 @@ function generatePw(e) {
 
 function completePw() {
 	while (passwordAll.length < parseInt(displaySize.textContent)) {
-		const numberR = getRandom();
+		const numberR = getRandom(); // va a llamar la funcion get ramdom porque en este caso una vez que garantiza que por lo menos tiene una mayuscula, minuscula, simbolo y caracter lo que necesita completar el password se complete aleatoriamente 
 		if (upper.checked && numberR === 0) {
-			passwordAll += getUpperCase();
-		}
+			passwordAll += getUpperCase();//tiene la misma logica del generate pero se añade la condicional de "and"  donde se pregunta que numberR sea igual a 0, esta funcion get ramdom va a generar un numero de 0 a 3, el cual nos va a servir para entrar aleatoriamente a las condicionale
+		}// verificando que las mayusculas esten checked, el getRandom nos devuelve un 0 entonces va a concatenar un caracter mayuscula
 		if (lower.checked && numberR === 1) {
 			passwordAll += getLowerCase();
 		}
