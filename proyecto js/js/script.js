@@ -61,10 +61,12 @@ function generatePw(e) {
 		passwordAll += getSymbolCase();
 	}
 	if (upper.checked || lower.checked || number.checked || symbol.checked) {
-		completePw(); // garantiza que por lo menos salga un caracter de cada uno
+		completePw(); /*  NECESITAMOS GRARANTIZAR QUE UNO DE ESTOS ESTEN CHECKED PARA QUE PUEDA ENTRAR EN LAS CONDICIONES DE FUNCTION COMPLETEPW,
+		PORQUE LA LOGICA DEL GENERATE NO ME LOS MOSTRABA DESORDENADOS SI SELECCIONABA TODAS LAS CASILLAS AL MISMO TIEMPO*/
+	
 	}
 }
-
+// 
 function completePw() {
 	while (passwordAll.length < parseInt(displaySize.textContent)) {
 		const numberR = getRandom(); /* va a llamar la funcion get ramdom porque en este caso una vez que garantiza que por lo menos tiene una mayuscula,
